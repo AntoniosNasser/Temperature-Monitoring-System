@@ -39,7 +39,7 @@ void main()
                  Temperature[0]  = ' ';                 // Put space
                Temperature[1]  = (temp / 10) % 10  + 48;
                Temperature[2]  =  temp % 10  + 48;
-               Temperature[5] = 223;                    // Put degree symbol ( ° )
+               Temperature[5] = 223;                    // Put degree symbol ( Â° )
                lcd_out(2, 5, Temperature);              // Display LM35 temperature result
                // dispaly RGB as respect to value of Temp
                if(Temp<20)                            // display blue for Temp<20
@@ -69,7 +69,7 @@ void Init_Message(){
 
      Lcd_Cmd(_LCD_CLEAR);                 // Clear LCD
      Lcd_Cmd(_LCD_CURSOR_OFF);            // Cursor Off
-     /* print third name and third ID */
+     /* print developer name and  */
      Lcd_Out(1,1,"   Made By:");
      Lcd_Out(2,1,"Antonios Nasser");
      delay_ms(1000);                       // delay for few seconds
