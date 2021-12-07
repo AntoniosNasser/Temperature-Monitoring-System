@@ -22,7 +22,7 @@ void Init_Message();  // Initial message function declearation
 void main()
 {
      Lcd_Init();                           // Initialize LCD
-     Init_Message();                       // Initial Message function that shows names and IDs
+     Init_Message();                       // Initial Message function that shows developer’s name
      lcd_out(1, 3, "Temperature:");        // print "Temperature:" on LCD in row 1 and col 3
      
      // LM35 and RGB modules connections 
@@ -69,7 +69,7 @@ void Init_Message(){
 
      Lcd_Cmd(_LCD_CLEAR);                 // Clear LCD
      Lcd_Cmd(_LCD_CURSOR_OFF);            // Cursor Off
-     /* print developer name and  */
+     /* print developer’s name    */
      Lcd_Out(1,1,"   Made By:");
      Lcd_Out(2,1,"Antonios Nasser");
      delay_ms(1000);                       // delay for few seconds
